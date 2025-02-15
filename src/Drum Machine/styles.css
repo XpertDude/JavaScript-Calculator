@@ -1,6 +1,6 @@
 html,
 body {
-    background-image: url('./assets/images/music-background-with-phone-with-music-icon-column-modern-technology-concept-listening-music.jpg');
+    background-image: url('./assets/images/pexels-daniel-reche-718241-3721941.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,15 +14,15 @@ body {
 }
 
 #drum-machine {
-    border: 5px solid rgba(56, 4, 63, 0.582);
-    background-color: rgba(18, 7, 51, 0.747);
+    border: 5px solid rgba(27, 23, 27, 0.582);
+    background-color: rgba(31, 30, 34, 0.801);
 }
 
 .drum-pad {
     padding: 30px;
     margin: 5px;
     width: auto;
-    background-color: rgb(170, 35, 98);
+    background-color: rgb(12, 19, 32);
     text-align: center;
     display: inline-block;
     box-shadow: 1px 1px 5px black;
