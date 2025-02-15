@@ -100,6 +100,7 @@ export default function DrumMachine() {
 
     const volumeChange = (e) => {
         const volume = e.target.value;
+        setDisplay(`${Math.ceil(e.target.value * 100)}%`)
         Object.values(audioRefs).forEach((ref) => {
             if (ref.current) {
                 ref.current.volume = volume;
