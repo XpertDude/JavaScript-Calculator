@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import App from "./Simple-Web-Store/App"
+import App from "./Drum Machine/App"
 const rootElement = document.getElementById("root");
 
 if (rootElement) {

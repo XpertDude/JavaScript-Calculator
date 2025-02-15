@@ -1,5 +1,5 @@
 {
-  "homepage": "https://xpertdude.github.io/Store/",
+  "homepage": "",
   "name": "reactprojects",
   "private": true,
   "version": "0.0.0",
@@ -13,11 +13,12 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.11.3",
+    "framer-motion": "^12.4.3",
     "prop-types": "^15.8.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-router": "^7.1.1",
     "react-router-dom": "^6.28.1"
   },
