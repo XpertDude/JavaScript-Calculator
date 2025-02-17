@@ -34,23 +34,21 @@ export default function Calculator() {
                 return prevState.slice(0, -1) + target;
             }
             if (/^0$/.test(prevState) && /0/.test(target)) {
-                return target; // Prevents leading zeros
+                return target;
             }
             if (/^0$/.test(prevState) && target === ".") {
-                return prevState + target; // Allows "0."
+                return prevState + target;
             }
             if (/\.\d*$/.test(prevState) && target === ".") {
-                return prevState; // Prevents multiple decimal points
+                return prevState;
             }
             if (/\d+\.\d+$/.test(prevState) && /^[*+\-/]/.test(target)) {
-                return prevState + target; // Allows operators after decimal numbers
+                return prevState + target;
             }
             if (/[*+\-/]{2,}/.test(prevState + target)) {
-                // If there are consecutive operators, replace them with just one
                 return prevState.replace(/[*+\-/]+$/, '') + target;
             }
             if (/[*+\-/]{2,}$/.test(prevState)) {
-                // Prevent multiple consecutive operators in the input (like "12+-----")
                 return prevState.replace(/[*+\-/]+$/, '') + target;
             }
 
