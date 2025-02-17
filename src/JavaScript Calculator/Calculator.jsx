@@ -52,9 +52,9 @@ export default function Calculator() {
                 return prevState.replace(/[*+\-/]+$/, '') + target;
             }
 
-            if (input.length > 20) {
+            if (input.length > 15) {
                 setError('Input too long!')
-                setInput(prevState => prevState.slice(0, -1) + target)
+                setInput(prevState => prevState.slice(0, -1))
             }
             if (/^0$/.test(prevState)) {
                 setResult(target)
