@@ -76,6 +76,7 @@ export default function Calculator() {
             if (/^-?\d+(\.\d+)?([+\-*/]-?\d+(\.\d+)?)*$/.test(input)) {
                 const evaluatedResult = eval(input);
                 setResult(evaluatedResult);
+                setInput(evaluatedResult)
             } else {
                 setError('Invalid expression');
             }
